@@ -6,7 +6,7 @@
 
 int main() {
     std::vector<cl::Platform> platforms; //vector of cl platforms
-    cl::Platform::get(&platforms);
+    cl::Platform::get(&platforms); //get all platforms from vector of cl platforms
     if (platforms.empty()) {
         std::cerr << "OpenCL platforms not found." << std::endl;
         return 1;
